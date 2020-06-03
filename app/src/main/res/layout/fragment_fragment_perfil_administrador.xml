@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".FragmentPerfil" >
+
+    <TextView
+        android:id="@+id/activityPerfilAdministradorLblNombreUser"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Nombre Usuario" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorNombreUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="Nombre Usuario" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorLblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Nombre Completo" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorNombreCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="Nombre Completo" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorLblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Email" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="Email" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorLblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Password" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="**********" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorLblFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="Fecha de nacimiento" />
+    <TextView
+        android:id="@+id/activityPerfilAdministradorFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="01/01/2020" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnActualizarPassAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Password" />
+
+        <Button
+            android:id="@+id/btnActualizarEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ActulizarDatosAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/lblActulizarDatosAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Text"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAceptarActualizarAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Aceptar" />
+</LinearLayout>

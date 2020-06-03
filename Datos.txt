@@ -1,0 +1,77 @@
+Java
+	User / Administador
+		MainActivity
+		FragmentoAcercaDe
+
+	User
+		SignUpUser
+		Home
+		FragmentHome
+		FragmentPerfil
+		ComentariosUser
+		RecycleComentarios
+			AdaptadorComentarioUser
+			ContainerComentariosUser 
+		RecycleHome
+			AdaptadorHomeUser
+			ContainerHomeUser
+			
+	Administrador
+		HomeAdministrador
+		FragmentHomeAdministrador
+		FragmentPerfilAdministrador
+		FragmentCuentas
+		FragmentEstadisticas
+		ComentariosAdmin
+		RecycleComentarios
+			AdaptadorComentarioAdministrador
+			ContainerComentariosAdministrador
+		RecycleCuentas
+			AdaptadorCunetasAdministrador
+			ContainerCuentasAdministrador
+		RecycleHome
+			AdaptadorHomeAdministrador
+			ContainerHomeAdministrador
+		
+
+LayOut
+	User / Administador
+		activity_main
+		fragment_fragment_acerca_de
+	User
+		activity_sing_up_user
+		NavigarionDrawer					
+			activty_home
+			app_bar_home
+			content_home
+			nav_header_home
+		fragment_fragment_home
+		fragment_fragment_perfil
+		activity_comentarios_user
+		item_comentarios_user
+		item_home_user
+
+	Administrador
+		Navigation_drawer
+			activity_home_admistrador
+			app_bar_home_administrador
+			content_home_administrador
+			nav_header_home_administrado
+		fragment_fragment_home_administrador
+		fragment_fragment_perfil_administrador
+		fragment_fragment_cuentas
+		fragment_fragment_esatdisticas
+		activity:comentarios_admin
+		item_comentarios_admin
+		item_cuentas_administrador
+		item_home_administrador
+Menu
+	User
+		activity_home
+		home
+
+	Administrador
+		activity_home_administrador
+		home_administrador
+
+

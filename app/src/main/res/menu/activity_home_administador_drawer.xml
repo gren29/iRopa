@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_administrador"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_perfil_administrador"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_cuentas_administrador"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Cuentas" />
+        <item
+            android:id="@+id/nav_estadisticas_administrador"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Estadisticas" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_acercaDe_administrador"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Acerca De" />
+            <item
+                android:id="@+id/nav_salir_administrador"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>
