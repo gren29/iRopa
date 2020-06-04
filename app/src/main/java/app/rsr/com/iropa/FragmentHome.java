@@ -71,27 +71,27 @@ public class FragmentHome extends Fragment {
     }
 
     public void llenarlistaHomeUser(){
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"paulypolish",R.drawable.user,"paulypolish","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"_heerb",R.drawable.user,"_heerb","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"eduardo.tm58",R.drawable.user,"eduardo.tm58","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"chiio_ayame",R.drawable.user,"chiio_ayame","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"krnblv",R.drawable.user,"krnblv","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"lesz_escobar",R.drawable.user,"lesz_escobar","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"alejandrooozf",R.drawable.user,"alejandrooozf","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"brauxilio",R.drawable.user,"brauxilio","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"eduardo.tm58",R.drawable.user,"eduardo.tm58","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"jdavid.pm",R.drawable.user,"jdavid.pm","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"wizi_osornio",R.drawable.user,"wizi_osornio","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"noe.a.v",R.drawable.user,"noe.a.v","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"paulypolish",R.drawable.user,"paulypolish","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"krnblv",R.drawable.user,"krnblv","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"brauxilio",R.drawable.user,"brauxilio","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"alejandrooozf",R.drawable.user,"alejandrooozf","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"lesz_escobar",R.drawable.user,"lesz_escobar","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"chiio_ayame",R.drawable.user,"chiio_ayame","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"noe.a.v",R.drawable.user,"noe.a.v","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"alejandrooozf",R.drawable.user,"alejandrooozf","Comentario")));
-        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.user,"eduardo.tm58",R.drawable.user,"eduardo.tm58","Comentario")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.paulyrobenz_profile_picture,"paulypolish",R.drawable.paulypolish_publicacion,"paulypolish","Se ve chidoliro")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.amyhernandez_profile_picture,"_heerb",R.drawable._heerb_publicacion,"_heerb","Wooooo! Esta increible")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.eduardotm58_publicacion_2,"eduardo.tm58","¿Crees que esté en negro?")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.rocioayame_profile_picture,"chiio_ayame",R.drawable.chiio_ayame_publicacion,"chiio_ayame","Iría perfecto con unos tenis que tengo")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.karenblanco_profile_picture,"krnblv",R.drawable.krnblv_publicacion,"krnblv","Siempre me ha encantado ese color")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.leslieescobar_profile_picture,"lesz_escobar",R.drawable.lesz_escobar_publicacion,"lesz_escobar","Está espectacular")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.alejandrozepeda_profile_picture,"alejandrooozf",R.drawable.alejandrooozf_publicacion,"alejandrooozf","Creo que vi ese mismo modelo en el centro")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.brauliogarcia_profile_picture,"brauxilio",R.drawable.brauxilio_publicacion,"brauxilio","¿Estará dsiponible en mi talla?")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.eduardotm58_publicacion_2,"eduardo.tm58","Está super hermoso pero creo que es dificil de combinar")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.davidportilla_profile_picture,"jdavid.pm",R.drawable.jdavidpm_publicacion,"jdavid.pm","Genial, ya sé con que lo usaría")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.luisosornio_profile_picture,"wizi_osornio",R.drawable.wizi_osornio_publicacion,"wizi_osornio","Tengo una pieza igualita a esa")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.noeacosta_profile_picture,"noe.a.v",R.drawable.noeav_publicacion,"noe.a.v","No inventes, simpre la busqué")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.paulyrobenz_profile_picture,"paulypolish",R.drawable.paulypolish_publicacion_2,"paulypolish","No sabía que lo quería hasta que lo ví")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.karenblanco_profile_picture,"krnblv",R.drawable.krnblv_publicacion_2,"krnblv","Me encantooooo")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.brauliogarcia_profile_picture,"brauxilio",R.drawable.brauxilio_publicacion_2,"brauxilio","Lo necesito")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.alejandrozepeda_profile_picture,"alejandrooozf",R.drawable.alejandrooozf_publicacion_2,"alejandrooozf","Quedaría perfecto con un collar que tengo")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.leslieescobar_profile_picture,"lesz_escobar",R.drawable.lesz_escobar_publicacion_2,"lesz_escobar","La combinacion perfecta entre formal y casual")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.rocioayame_profile_picture,"chiio_ayame",R.drawable.chiio_ayame_publicacion_2,"chiio_ayame","Se ve super cómodo")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.noeacosta_profile_picture,"noe.a.v",R.drawable.noeav_publicacion_2,"noe.a.v","Estoy seguro que lo he visto antes")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.alejandrozepeda_profile_picture,"alejandrooozf",R.drawable.alejandrooozf_publicacion_3,"alejandrooozf","Creo que me enamoré desde que lo ví")));
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.eduardotm58_publicacion_3,"eduardo.tm58","Comentario")));
     }
 
     public void onButtonPressed(Uri uri) {

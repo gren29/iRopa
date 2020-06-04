@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        llenarBDUsuarioAdmin();
 
+        llenarBDUsuarioAdmin();
         btnLogin = findViewById(R.id.mainActivityButtonLogin);
         btnSignUpUser = findViewById(R.id.mainActivityButtonSignUp);
 
@@ -88,19 +88,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void llenarBDUsuarioAdmin(){
         //Falta imagen de cada Usuario
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("_heerb","Amy","Hernandez","amy_herb@gmail.com","herb","11/04/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("brauxilio","Braulio","Garcia","brau-97@gmail.com","brau97","01/03/1997",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("chiio_ayame","Rocio","Ayame","roci_amy@gmail.com","chiio","12/09/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("noe.a.v","Noe","Acosta","noe_acos@gmail.com","noeAcosta","21/11/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("krnblv","Karen","Blanco","kar_blanco@gmail.com","karkar","01/12/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("jdavid.pm","David","Portilla","david_por1@gmail.com","davi1por","12/02/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("lesz_escobar","Leslie","Escobar","andrea@gmail.com","andrea","14/01/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("wizi_osornio","Luis","Osornio","luis_oso@gmail.com","osoluis","12/09/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("alejandrooozf","Alejandro","Zepeda","zepeda_chido@gmail.com","maquinaazul","12/09/1997",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("eduardo.tm58","Eduardo","Tenorio","dontenorio@gmail.com","tenorio","16/09/1995",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("paulypolish","Pauly","Robenz","pauly@gmail.com","pauly","12/09/1998",R.drawable.unnamed,"user"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("usiel_arista","Usiel","Arista","usiel_arista@gmail.com","admin1","12/09/1998",R.drawable.unnamed,"admin"));
-        arrayBDUserAdmin.add(new BDUsuarioAdmin("raul_sanchez","Raul","Sanchez","raul_sanchez@gmail.com","admin2","18/09/1998",R.drawable.unnamed,"admin"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("_heerb","Amy","Hernandez","amy_herb@gmail.com","herb","11/04/1998",R.drawable.amyhernandez_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("brauxilio","Braulio","Garcia","brau-97@gmail.com","brau97","01/03/1997",R.drawable.brauliogarcia_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("chiio_ayame","Rocio","Ayame","roci_amy@gmail.com","chiio","12/09/1998",R.drawable.rocioayame_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("noe.a.v","Noe","Acosta","noe_acos@gmail.com","noeAcosta","21/11/1998",R.drawable.noeacosta_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("krnblv","Karen","Blanco","kar_blanco@gmail.com","karkar","01/12/1998",R.drawable.karenblanco_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("jdavid.pm","David","Portilla","david_por1@gmail.com","davi1por","12/02/1998",R.drawable.davidportilla_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("lesz_escobar","Leslie","Escobar","andrea@gmail.com","andrea","14/0<<1/1998",R.drawable.leslieescobar_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("wizi_osornio","Luis","Osornio","luis_oso@gmail.com","osoluis","12/09/1998",R.drawable.luisosornio_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("alejandrooozf","Alejandro","Zepeda","zepeda_chido@gmail.com","maquinaazul","12/09/1997",R.drawable.alejandrozepeda_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("eduardo.tm58","Eduardo","Tenorio","dontenorio@gmail.com","tenorio","16/09/1995",R.drawable.davidportilla_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("paulypolish","Pauly","Robenz","pauly@gmail.com","pauly","12/09/1998",R.drawable.paulyrobenz_profile_picture,"user"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("usiel_arista","Usiel","Arista","usiel_arista@gmail.com","admin1","12/09/1998",R.drawable.usielarista_profile_picture,"admin"));
+        arrayBDUserAdmin.add(new BDUsuarioAdmin("raul_sanchez","Raul","Sanchez","raul_sanchez@gmail.com","admin2","18/09/1998",R.drawable.raulsanchez_profile_picture,"admin"));
     }
 
     private String validacionUserAdmin(String idUserAdmin,String password, ArrayList<BDUsuarioAdmin> arrayBDUserAdmin){

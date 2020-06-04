@@ -4,16 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp"
     android:orientation="vertical"
     tools:context=".ComentariosUser" >
 
     <ImageView
         android:id="@+id/activityComentariosImageUser"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/publicacion" />
 
@@ -21,6 +18,8 @@
         android:id="@+id/recyclevieComentariosUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
         android:layout_marginTop="10dp">
 
     </android.support.v7.widget.RecyclerView>
@@ -33,17 +32,15 @@
 
         <EditText
             android:id="@+id/activityComentarioslblComentario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="Escribir comentario"/>
 
         <Button
             android:id="@+id/activityComentariosBtnEnvia"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="40dp"
             android:text="Enviar" />
 
     </LinearLayout>

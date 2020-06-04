@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="60dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -17,6 +18,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
             android:src="@color/colorPrimaryDark"
             app:srcCompat="@mipmap/ic_launcher" />
 
@@ -24,15 +26,18 @@
             android:id="@+id/itemHomeAdministradorIdNombreUsuarioTitulo"
             android:layout_width="192dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lato_bold"
             android:text="Nombre Usuario"
-            android:textSize="15dp" />
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/itemHomeAdministradorBtnElimnar"
-            android:layout_width="100dp"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="right"
+            android:fontFamily="@font/lato_bold"
             android:text="Eliminar" />
     </LinearLayout>
 
@@ -40,9 +45,6 @@
         android:id="@+id/itemHomeAdministradorIdImagenPublicacion"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="15dp"
         android:scaleType="centerCrop"
         android:src="@color/colorPrimaryDark"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -55,7 +57,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
 
             <TextView
                 android:id="@+id/itemHomeAdministradorIdNombreUsuarioComentario"
@@ -63,8 +66,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
                 android:text="Nombre Usuario"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/itemHomeAdministradorIdComentario"
@@ -73,8 +77,9 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
+                android:fontFamily="@font/lato"
                 android:text="Comentario de usuario "
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
         </LinearLayout>
     </LinearLayout>

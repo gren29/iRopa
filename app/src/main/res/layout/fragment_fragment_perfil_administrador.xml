@@ -8,128 +8,194 @@
     android:orientation="vertical"
     tools:context=".FragmentPerfil" >
 
-    <TextView
-        android:id="@+id/activityPerfilAdministradorLblNombreUser"
-        style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="Nombre Usuario" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorNombreUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        android:text="Nombre Usuario" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorLblNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="Nombre Completo" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorNombreCompleto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        android:text="Nombre Completo" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorLblEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="Email" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        android:text="Email" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorLblPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="Password" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        android:text="**********" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorLblFechaNacimiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="1"
-        android:text="Fecha de nacimiento" />
-    <TextView
-        android:id="@+id/activityPerfilAdministradorFechaNacimiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        android:text="01/01/2020" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/activityPerfilAdministradorLblNombreUser"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Nombre Usuario"
+                android:textSize="17sp" />
 
+            <TextView
+                android:id="@+id/activityPerfilAdministradorNombreUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato"
+                android:text="Nombre Usuario"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/activityPerfilAdministradorLblNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Nombre Completo"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorNombreCompleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Nombre Completo"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorLblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorLblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Password"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="**********"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorLblFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Fecha de nacimiento"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/activityPerfilAdministradorFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="01/01/2020"
+                android:fontFamily="@font/lato"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/usielarista_profile_picture" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:text="Actualizar Datos"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginBottom="5dp"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+>
         <Button
             android:id="@+id/btnActualizarPassAdmin"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Password" />
+            android:text="Password"
+            android:fontFamily="@font/lato_bold"/>
 
         <Button
             android:id="@+id/btnActualizarEmailAdmin"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
-            android:text="Email" />
-
+            android:text="Email"
+            android:fontFamily="@font/lato_bold"/>
     </LinearLayout>
 
     <TextView
         android:id="@+id/ActulizarDatosAdmin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="17sp"
+        android:fontFamily="@font/lato_bold"/>
 
     <EditText
         android:id="@+id/lblActulizarDatosAdmin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:ems="10"
+        android:fontFamily="@font/lato"
         android:hint="Text"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="16sp"/>
 
     <Button
         android:id="@+id/btnAceptarActualizarAdmin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Aceptar" />
+        android:text="Aceptar"
+        android:fontFamily="@font/lato_bold"/>
 </LinearLayout>
