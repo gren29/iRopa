@@ -84,6 +84,7 @@ public class FragmentCuentas extends Fragment {
     }
 
     public void llenarCuentas(){
+        listaCuentasAdministrador.add(new ContainerCuentasAdministrador("paulypolish","Pauly Robenz","pauly@gmail.com"));
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("_heerb","Amy Hernandez","amy_herb@gmail.com"));
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("brauxilio","Braulio Garcia","brau-97@gmail.com"));
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("chiio_ayame","Rocio Ayame","roci_amy@gmail.com"));
@@ -94,7 +95,7 @@ public class FragmentCuentas extends Fragment {
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("wizi_osornio","Luis Osornio","luis_oso@gmail.com"));
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("alejandrooozf","Alejandro Zepeda","zepeda_chido@gmail.com"));
         listaCuentasAdministrador.add(new ContainerCuentasAdministrador("eduardo.tm58","Eduardo Tenorio","dontenorio@gmail.com"));
-        listaCuentasAdministrador.add(new ContainerCuentasAdministrador("paulypolish","Pauly Robenz","pauly@gmail.com"));
+
     }
 
     public void onButtonPressed(Uri uri) {

@@ -17,10 +17,10 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclevieComentariosUser"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp">
 
     </android.support.v7.widget.RecyclerView>
 
@@ -35,14 +35,17 @@
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:ems="10"
-            android:hint="Escribir comentario"/>
+            android:fontFamily="@font/lato"
+            android:hint="Escribir comentario"
+            android:textSize="17sp" />
 
         <Button
             android:id="@+id/activityComentariosBtnEnvia"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_bold"
             android:text="Enviar" />
-
     </LinearLayout>
 
 </LinearLayout>
