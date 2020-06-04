@@ -9,7 +9,7 @@
     tools:context=".FragmentPerfil" >
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -22,102 +22,111 @@
                 style="@android:style/Widget.DeviceDefault.Light.TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="Nombre Usuario"
                 android:fontFamily="@font/lato_bold"
-                android:textSize="17sp"/>
+                android:text="Nombre Usuario"
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserNombreUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:fontFamily="@font/lato"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato"
                 android:text="Nombre Usuario"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserLblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
-                android:text="Nombre Completo"
                 android:fontFamily="@font/lato_bold"
-                android:textSize="17sp"/>
+                android:text="Nombre Completo"
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserNombreCompleto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:fontFamily="@font/lato"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato"
                 android:text="Nombre Completo"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserLblEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
                 android:text="Email"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:fontFamily="@font/lato"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato"
                 android:text="Email"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserLblPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
                 android:text="Password"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/lato"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/lato"
                 android:text="**********"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserLblFechaNacimiento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/lato_bold"
                 android:text="Fecha de nacimiento"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/activityPerfilUserFechaNacimiento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/lato"
                 android:text="01/01/2020"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
         </LinearLayout>
 
         <ImageView
