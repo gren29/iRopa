@@ -37,7 +37,7 @@ public class Publicacion extends AppCompatActivity {
         btnImagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnImagen.setImageResource(R.drawable.user);
+                btnImagen.setImageResource(R.drawable.josepasaran_profile_picture);
                 //Toast.makeText(getApplicationContext(),"imagen",Toast.LENGTH_SHORT).show();
             }
         });

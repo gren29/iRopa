@@ -48,12 +48,12 @@ public class ComentariosUser extends AppCompatActivity {
 
     public void llenarComentariosUser(){
         //En esta seccion es donde se van a llenar todos los comentarios
-        listaComentariosUser.add(new ContainerComentarioUser("paulypolish","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("chiio_ayame","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("brauxilio","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("lesz_escobar","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("alejandrooozf","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("krnblv","Comentario de usuario"));
-        listaComentariosUser.add(new ContainerComentarioUser("wizi_osornio","Comentario de usuario"));
+        listaComentariosUser.add(new ContainerComentarioUser("paulypolish","Esta muy padre, pero, hay algo que no me termina de convencer"));
+        listaComentariosUser.add(new ContainerComentarioUser("chiio_ayame","Wow, increible ¿Sabes si tienen sucursales en Pachuca?"));
+        listaComentariosUser.add(new ContainerComentarioUser("brauxilio","Hermoso, simplemente hermoso"));
+        listaComentariosUser.add(new ContainerComentarioUser("lesz_escobar","Estaria perfecto con unos zapatos azules"));
+        listaComentariosUser.add(new ContainerComentarioUser("alejandrooozf","Me encantaria ese mismo modelo en rojo"));
+        listaComentariosUser.add(new ContainerComentarioUser("krnblv","Es un acierto total esa combinación"));
+        listaComentariosUser.add(new ContainerComentarioUser("wizi_osornio","Adoré ese corte"));
     }
 }

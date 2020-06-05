@@ -60,12 +60,13 @@
 
         <ImageButton
             android:id="@+id/activityPublicidadEnviar"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
+            style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="#3F51B5"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_menu_send" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#00FCFCFC"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/enviar" />
     </LinearLayout>
 </LinearLayout>
