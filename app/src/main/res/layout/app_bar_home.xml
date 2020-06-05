@@ -24,13 +24,11 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="75dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:backgroundTint="#18000000"
-        android:scaleType="centerCrop"
-        app:backgroundTint="#007B0F0F"
+        app:backgroundTint="#C1B9B9"
         app:srcCompat="@drawable/agregaruno" />
 
 </android.support.design.widget.CoordinatorLayout>

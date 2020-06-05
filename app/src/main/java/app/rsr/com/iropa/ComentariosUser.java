@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -42,6 +43,7 @@ public class ComentariosUser extends AppCompatActivity {
                 listaComentariosUser.add(new ContainerComentarioUser("eduardo.tm58",stringMesanje));
                 mensaje.setText("");
                 adapter.notifyDataSetChanged();
+                Toast.makeText(getApplicationContext(),"Mensaje enviado.",Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -1,5 +1,6 @@
-package app.rsr.com.iropa;
 
+package app.rsr.com.iropa;
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,7 +15,6 @@ public class AdaptadorComentariosAdministrador extends RecyclerView.Adapter<Adap
 
     ArrayList<ContainerComentariosAdministrador> listaComentariosAdministrador;
     private View.OnClickListener listener;
-
     public AdaptadorComentariosAdministrador(ArrayList<ContainerComentariosAdministrador>listaComentariosAdministrador){
         this.listaComentariosAdministrador = listaComentariosAdministrador;
     }
@@ -28,7 +28,7 @@ public class AdaptadorComentariosAdministrador extends RecyclerView.Adapter<Adap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderComentariosAdministrador viewHolderComentariosAdministrador, final int i) {
+    public void onBindViewHolder(@NonNull ViewHolderComentariosAdministrador viewHolderComentariosAdministrador, @SuppressLint("RecyclerView") final int i) {
         viewHolderComentariosAdministrador.lblNombreUser.setText(listaComentariosAdministrador.get(i).getComentarioAdministradorNombreUser());
         viewHolderComentariosAdministrador.lblComentarioUser.setText(listaComentariosAdministrador.get(i).getComentarioAdministradorComentario());
         viewHolderComentariosAdministrador.btnEliminar.setOnClickListener(new View.OnClickListener() {

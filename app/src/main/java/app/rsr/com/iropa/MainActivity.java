@@ -56,10 +56,12 @@ public class MainActivity extends AppCompatActivity {
                     Intent myIntent = new Intent(MainActivity.this,Home.class);
                     myIntent.putExtra("BDUserAdmin",arrayBDUserAdmin);
                     myIntent.putExtra("idUserAdmin",stringLblUser);
+                    Toast.makeText(getApplicationContext(),"Bienvenido",Toast.LENGTH_SHORT).show();
                     startActivity(myIntent);
                 }
                 if(tipo.equals("admin")){
                     Intent myIntent = new Intent(MainActivity.this,HomeAdministador.class);
+                    Toast.makeText(getApplicationContext(),"Bienvenido",Toast.LENGTH_SHORT).show();
                     myIntent.putExtra("BDUserAdmin",arrayBDUserAdmin);
                     myIntent.putExtra("idUserAdmin",stringLblUser);
                     startActivity(myIntent);

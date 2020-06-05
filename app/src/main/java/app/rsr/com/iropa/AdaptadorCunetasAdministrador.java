@@ -14,7 +14,6 @@ public class AdaptadorCunetasAdministrador extends RecyclerView.Adapter<Adaptado
 
     ArrayList<ContainerCuentasAdministrador> listaCunetasAdministrador;
     private View.OnClickListener listener;
-
     public AdaptadorCunetasAdministrador(ArrayList<ContainerCuentasAdministrador>listaCunetasAdministrador){
         this.listaCunetasAdministrador = listaCunetasAdministrador;
     }

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Publicacion extends AppCompatActivity {
 
@@ -37,7 +38,7 @@ public class Publicacion extends AppCompatActivity {
         btnImagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                btnImagen.setImageResource(R.drawable.josepasaran_profile_picture);
+                btnImagen.setImageResource(R.drawable.eduardotm58_publicacion_3);
                 //Toast.makeText(getApplicationContext(),"imagen",Toast.LENGTH_SHORT).show();
             }
         });
@@ -51,8 +52,7 @@ public class Publicacion extends AppCompatActivity {
                 costo = lblCosto.getText().toString();
                 Intent miinten = new Intent(Publicacion.this,Home.class);
                 startActivity(miinten);
-
-                //Toast.makeText(getApplicationContext(),"enviar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Imagen publicada",Toast.LENGTH_SHORT).show();
             }
         });
     }
