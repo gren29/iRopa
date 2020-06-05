@@ -19,7 +19,7 @@ public class ComentariosAdmin extends AppCompatActivity {
         setContentView(R.layout.activity_comentarios_admin);
         listaComentariosAdmin = new ArrayList<>();
         imagen  =(ImageView)findViewById(R.id.activityComentariosImageAdministrador);
-        imagen.setImageResource(R.drawable.user);
+        imagen.setImageResource(R.drawable.paulypolish_publicacion);
         recyclerView = (RecyclerView)findViewById(R.id.recyclevieComentariosAdministrador);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         llenarComentariosAdmin();

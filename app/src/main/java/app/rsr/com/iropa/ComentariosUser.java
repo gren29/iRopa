@@ -28,7 +28,7 @@ public class ComentariosUser extends AppCompatActivity {
         btnEnviar = (Button)findViewById(R.id.activityComentariosBtnEnvia);
         mensaje = (EditText)findViewById(R.id.activityComentarioslblComentario);
         imagen  =(ImageView)findViewById(R.id.activityComentariosImageUser);
-        imagen.setImageResource(R.drawable.user);
+        imagen.setImageResource(R.drawable.paulypolish_publicacion);
 
         listaComentariosUser = new ArrayList<>();
         recyclerViewComentarios = (RecyclerView)findViewById(R.id.recyclevieComentariosUser);

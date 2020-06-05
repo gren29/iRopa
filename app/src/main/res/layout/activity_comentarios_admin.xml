@@ -11,8 +11,8 @@
         android:id="@+id/activityComentariosImageAdministrador"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/publicacion" />
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/paulypolish_publicacion" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclevieComentariosAdministrador"

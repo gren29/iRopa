@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="610dp"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/eduardotm58_publicacion_3" />
 
     <EditText
         android:id="@+id/activityPublicidadProducto"
