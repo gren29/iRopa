@@ -1,13 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FragmentEstadisticas">
+    android:layout_height="wrap_content"
+    tools:context=".FragmentEstadisticas"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estadisticas Administrador" />
-</FrameLayout>
+        android:fontFamily="@font/lato_bold"
+        android:text="Estadisticas"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+git
+        <Button
+            android:id="@+id/btnUsuariosEstadistcias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Usuarios"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:id="@+id/btnPublicacionesEstadisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Publicaciones"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/btnComentariosEstadisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comentarios" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imagenEstadisticas"
+        android:layout_width="344dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:scaleType="fitStart"
+        android:src="@drawable/estadisticapublicacion" />
+</LinearLayout>

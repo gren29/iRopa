@@ -11,8 +11,8 @@ import android.widget.ImageView;
 public class Splash extends AppCompatActivity {
 
     ImageView iamgen;
-    static  final int duracion = 1500;
-    static final int duraciondespues = 1000;
+    static  final int duracion =2000;
+    static final int duraciondespues = 500;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
