@@ -21,6 +21,8 @@ public class FragmentHome extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    String idUserGlobal = null;
+
     private OnFragmentInteractionListener mListener;
 
     RecyclerView recyclerHome;
@@ -52,8 +54,9 @@ public class FragmentHome extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         final View vista = inflater.inflate(R.layout.fragment_fragment_home,container,false);
+        idUserGlobal = getArguments().getString("idUserGlobal");
+        //Toast.makeText(getContext(),"Homo F : "+idUserGlobal,Toast.LENGTH_SHORT).show();
         listaContainerHomeUser = new ArrayList<>();
         recyclerHome = vista.findViewById(R.id.recycleviewHomeUser);
         recyclerHome.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -63,6 +66,7 @@ public class FragmentHome extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),ComentariosUser.class);
+                myIntent.putExtra("idUserGlobal",idUserGlobal);
                 startActivity(myIntent);
             }
         });
@@ -71,6 +75,7 @@ public class FragmentHome extends Fragment {
     }
 
     public void llenarlistaHomeUser(){
+        listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.tenorio,"eduardo.tm58","Colores una buena combinacion para mi proximo traje")));
         listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.paulyrobenz_profile_picture,"paulypolish",R.drawable.paulypolish_publicacion,"paulypolish","Esa combinación  nunca va a pasar de moda, simplemente perfecta, les comparto la información por si les interesa")));
         listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.amyhernandez_profile_picture,"_heerb",R.drawable._heerb_publicacion,"_heerb","Esté conjunto se ve super formal y al mismo tiempo esta muy cómodo, se los recomiendo totalmente, aparte el azul nunca pasa de moda")));
         listaContainerHomeUser.add((new ContainerHomeUser(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.eduardotm58_publicacion_2,"eduardo.tm58","No me jusguen pero esta blusa está espectacular!!! Tendrán más información acerca de ropa como esta")));

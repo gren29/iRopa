@@ -30,11 +30,13 @@ public class ComentariosAdmin extends AppCompatActivity {
     public void llenarComentariosAdmin(){
         //En esta seccion es donde se van a llenar todos los comentarios
         listaComentariosAdmin.add(new ContainerComentariosAdministrador("paulypolish","Esta muy padre, pero, hay algo que no me termina de convencer"));
+        listaComentariosAdmin.add(new ContainerComentariosAdministrador("alejandrooozf","Una combinacion con un gran acierto no creen?"));
+        listaComentariosAdmin.add(new ContainerComentariosAdministrador("lesz_escobar","Azules, unos zapatos auzles combinarian???"));
         listaComentariosAdmin.add(new ContainerComentariosAdministrador("chiio_ayame","Wow, increible ¿Sabes si tienen sucursales en Pachuca?"));
-        listaComentariosAdmin.add(new ContainerComentariosAdministrador("brauxilio","Hermoso, simplemente hermoso"));
-        listaComentariosAdmin.add(new ContainerComentariosAdministrador("lesz_escobar","Estaria perfecto con unos zapatos azules"));
-        listaComentariosAdmin.add(new ContainerComentariosAdministrador("alejandrooozf","Me encantaria ese mismo modelo en rojo"));
-        listaComentariosAdmin.add(new ContainerComentariosAdministrador("krnblv","Es un acierto total esa combinación"));
-        listaComentariosAdmin.add(new ContainerComentariosAdministrador("wizi_osornio","Adoré ese corte"));
+        listaComentariosAdmin.add(new ContainerComentariosAdministrador("krnblv","Me encantaria ese mismo modelo en rojo"));
+        listaComentariosAdmin.add(new ContainerComentariosAdministrador("wizi_osornio","Afore todo el ocnjunto"));
+        listaComentariosAdmin.add(new ContainerComentariosAdministrador("brauxilio","Hermoso, simplemente hermoso esa combinacion de colores"));
+
+
     }
 }

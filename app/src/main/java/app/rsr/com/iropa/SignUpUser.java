@@ -74,9 +74,10 @@ public class SignUpUser extends AppCompatActivity {
                 }
                 else{
                     //Si esta bien tod-o proceder a guardar datos y cambiar a Home
-                    arrayBDUserAdmin.add(new BDUsuarioAdmin(stringLblUser,stringLblNombreCompleto,stringLblApellido,stringLblEmail,stringLblPassword,stringLblFechaNaimiento,R.drawable.josepasaran_profile_picture,"user"));
+                   // arrayBDUserAdmin.add(new BDUsuarioAdmin(stringLblUser,stringLblNombreCompleto,stringLblApellido,stringLblEmail,stringLblPassword,stringLblFechaNaimiento,R.drawable.josepasaran_profile_picture,"user"));
                     Intent myIntent = new Intent(SignUpUser.this,Home.class);
                     Toast.makeText(getApplicationContext(),"Cuenta creada",Toast.LENGTH_SHORT).show();
+                    myIntent.putExtra("idUser",stringLblUser);
                     startActivity(myIntent);
                 }
             }

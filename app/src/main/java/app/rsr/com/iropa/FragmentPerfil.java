@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FragmentPerfil extends Fragment {
     private static final String ARG_PARAM1 = "param1";
@@ -17,6 +18,8 @@ public class FragmentPerfil extends Fragment {
 
     private String mParam1;
     private String mParam2;
+
+    String idUserGlobal = null;
 
     View vista;
     TextView lblNombreCompleto;
@@ -71,6 +74,9 @@ public class FragmentPerfil extends Fragment {
         //Sellenan los campos en las busquedas del perfil
         //Los String almacenaran los datos de las busquedas
         vista = inflater.inflate(R.layout.fragment_fragment_perfil, container, false);
+
+        idUserGlobal = getArguments().getString("idUserGlobal");
+        Toast.makeText(getContext(),"Homo F : "+idUserGlobal,Toast.LENGTH_SHORT).show();
 
         lblNombreCompleto = (TextView)vista.findViewById(R.id.activityPerfilUserNombreCompleto);
         lblNombreUser = (TextView)vista.findViewById(R.id.activityPerfilUserNombreUser);

@@ -20,15 +20,21 @@ public class ComentariosUser extends AppCompatActivity {
     EditText mensaje;
     String stringMesanje;
     ImageView imagen;
+    Bundle datosRecividos;
+    String idUserGlobal = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comentarios_user);
 
+        datosRecividos = getIntent().getExtras();
+        idUserGlobal = datosRecividos.getString("idUserGlobal");
+       // Toast.makeText(getApplicationContext(), "Comentarios: " + idUserGlobal,Toast.LENGTH_SHORT).show();
+
         btnEnviar = (Button)findViewById(R.id.activityComentariosBtnEnvia);
         mensaje = (EditText)findViewById(R.id.activityComentarioslblComentario);
         imagen  =(ImageView)findViewById(R.id.activityComentariosImageUser);
-        imagen.setImageResource(R.drawable.paulypolish_publicacion);
+        imagen.setImageResource(R.drawable.alejandrooozf_publicacion);
 
         listaComentariosUser = new ArrayList<>();
         recyclerViewComentarios = (RecyclerView)findViewById(R.id.recyclevieComentariosUser);

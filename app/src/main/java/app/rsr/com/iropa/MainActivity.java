@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     //Semi bases de datos
     //Se crean desde un principio
     public ArrayList<BDUsuarioAdmin> arrayBDUserAdmin = new ArrayList<BDUsuarioAdmin>();
+    public ArrayList<ContainerHomeUser> listaContainerHomeUser = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         llenarBDUsuarioAdmin();
+        llenarBDPublicaciones();
         btnLogin = findViewById(R.id.mainActivityButtonLogin);
         btnSignUpUser = findViewById(R.id.mainActivityButtonSignUp);
 
@@ -54,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
                //Toast.makeText(getApplicationContext(),tipo,Toast.LENGTH_LONG).show();
                 if(tipo.equals("user")){
                     Intent myIntent = new Intent(MainActivity.this,Home.class);
-                    myIntent.putExtra("BDUserAdmin",arrayBDUserAdmin);
-                    myIntent.putExtra("idUserAdmin",stringLblUser);
-                    Toast.makeText(getApplicationContext(),"Bienvenido",Toast.LENGTH_SHORT).show();
+                    myIntent.putExtra("idUser",stringLblUser);
+                    myIntent.putExtra("bdPublicacionesGlobal",listaContainerHomeUser);
+                    Toast.makeText(getApplicationContext(),"Bienvenido ",Toast.LENGTH_SHORT).show();
                     startActivity(myIntent);
                 }
                 if(tipo.equals("admin")){
@@ -105,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
         arrayBDUserAdmin.add(new BDUsuarioAdmin("raul_sanchez","Raul","Sanchez","raul_sanchez@gmail.com","admin2","18/09/1998",R.drawable.raulsanchez_profile_picture,"admin"));
     }
 
+    public void llenarBDPublicaciones(){
+
+    }
     private String validacionUserAdmin(String idUserAdmin,String password, ArrayList<BDUsuarioAdmin> arrayBDUserAdmin){
        String tipoFinal  = "NO";
 

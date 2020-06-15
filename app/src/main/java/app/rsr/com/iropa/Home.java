@@ -20,22 +20,35 @@ import java.util.ArrayList;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, FragmentHome.OnFragmentInteractionListener,FragmentPerfil.OnFragmentInteractionListener,FragmentAcercaDe.OnFragmentInteractionListener {
 
+    Bundle datosRecividos;
+    Bundle datosEnviados = new Bundle();
+    String idUserGlobal = null;
+    ArrayList<BDPublicacion> bdPublicacionsGlobal = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final ArrayList<BDUsuarioAdmin> arrayBDUserAdmin = (ArrayList<BDUsuarioAdmin>)getIntent().getSerializableExtra("BDUserAdmin");
-        //Toast.makeText(getApplicationContext(),"Home"+arrayBDPublicaciones.size(),Toast.LENGTH_SHORT).show();
+
+        //recivir datos
+        datosRecividos = getIntent().getExtras();
+        idUserGlobal = datosRecividos.getString("idUser");
+       // bdPublicacionsGlobal = (ArrayList<BDPublicacion>) datosRecividos.getSerializable("bdPublicacionesGlobal");
+        //Toast.makeText(getApplicationContext(), "Home: " + idUserGlobal+"   T:"+bdPublicacionsGlobal.size(),Toast.LENGTH_SHORT).show();
+
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent miinTENT =  new Intent(Home.this,Publicacion.class);
+                miinTENT.putExtra("idUser",idUserGlobal);
                 startActivity(miinTENT);
             }
         });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -43,8 +56,9 @@ public class Home extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        //Toast.makeText(getApplicationContext(),"Entre a home",Toast.LENGTH_SHORT).show();
+        datosEnviados.putString("idUserGlobal",idUserGlobal);
         Fragment fragment = new FragmentHome();
+        fragment.setArguments(datosEnviados);
         getSupportFragmentManager().beginTransaction().add(R.id.content_home,fragment).commit();
 
         navigationView.setNavigationItemSelectedListener(this);
@@ -88,9 +102,13 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             miFragment = new FragmentHome();
+            datosEnviados.putString("idUserGlobal",idUserGlobal);
+            miFragment.setArguments(datosEnviados);
             fragmentSeleccionado = true;
         } else if (id == R.id.nav_perfil) {
             miFragment = new FragmentPerfil();
+            datosEnviados.putString("idUserGlobal",idUserGlobal);
+            miFragment.setArguments(datosEnviados);
             fragmentSeleccionado = true;
         }else if (id == R.id.nav_acercaDe) {
             miFragment = new FragmentAcercaDe();

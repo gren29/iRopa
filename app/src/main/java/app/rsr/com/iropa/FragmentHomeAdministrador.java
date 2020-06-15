@@ -70,6 +70,7 @@ public class FragmentHomeAdministrador extends Fragment {
      public void llenarListaHomeAdmin(){
         //En esta secicion se llena de momento manual las publicacion de cada usuario
         //Aqui va a la base de datos
+         listaContainerhomeAdmin.add((new ContainerHomeAdministrador(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.tenorio,"eduardo.tm58","Colores una buena combinacion para mi proximo traje")));
          listaContainerhomeAdmin.add((new ContainerHomeAdministrador(R.drawable.paulyrobenz_profile_picture,"paulypolish",R.drawable.paulypolish_publicacion,"paulypolish","Esa combinación  nunca va a pasar de moda, simplemente perfecta, les comparto la información por si les interesa")));
          listaContainerhomeAdmin.add((new ContainerHomeAdministrador(R.drawable.amyhernandez_profile_picture,"_heerb",R.drawable._heerb_publicacion,"_heerb","Esté conjunto se ve super formal y al mismo tiempo esta muy cómodo, se los recomiendo totalmente, aparte el azul nunca pasa de moda")));
          listaContainerhomeAdmin.add((new ContainerHomeAdministrador(R.drawable.eduardotenorio_profile_picture,"eduardo.tm58",R.drawable.eduardotm58_publicacion_2,"eduardo.tm58","No me jusguen pero esta blusa está espectacular!!! Tendrán más información acerca de ropa como esta")));
